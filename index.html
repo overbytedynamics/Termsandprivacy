@@ -1,134 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Overbyte Dynamics</title>
-  <link rel="icon" href="data:,">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #0b0f19;
-      color: #e6edf3;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Overbyte Dynamics</title>
+<link rel="icon" href="data:,">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #0b0f19;
+    color: #e6edf3;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  header {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  h1 { font-size: 2.8rem; font-weight: 600; letter-spacing: 1px; color: #38bdf8; }
+  .subtitle { margin-top: 10px; font-size: 1.1rem; color: #8b949e; }
 
-    header {
-      padding: 40px 20px;
-      text-align: center;
-    }
-    h1 { font-size: 2.8rem; font-weight: 600; letter-spacing: 1px; color: #38bdf8; }
-    .subtitle { margin-top: 10px; font-size: 1.1rem; color: #8b949e; }
+  main { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 
-    main { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+  .card {
+    background: #111827;
+    padding: 40px 60px;
+    border-radius: 14px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    text-align: center;
+    margin-bottom: 30px;
+    width: 90%;
+    max-width: 500px;
+  }
 
-    .card {
-      background: #111827;
-      padding: 40px 60px;
-      border-radius: 14px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-      text-align: center;
-      margin-bottom: 30px;
-      width: 90%;
-      max-width: 500px;
-    }
+  .links {
+    margin-top: 25px;
+  }
+  .links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 10px 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #1f2937;
+    color: #38bdf8;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    font-weight: 500;
+  }
+  .links a:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateY(-2px);
+  }
+  .links img { width: 20px; }
 
-    .links {
-      margin-top: 25px;
-    }
-    .links a {
-      display: inline-block;
-      margin: 10px 15px;
-      padding: 10px 20px;
-      border-radius: 8px;
-      background: #1f2937;
-      color: #38bdf8;
-      text-decoration: none;
-      transition: all 0.2s ease;
-      font-weight: 500;
-    }
-    .links a:hover {
-      background: #2563eb;
-      color: white;
-      transform: translateY(-2px);
-    }
+  .news {
+    background: #111827;
+    padding: 30px 40px;
+    border-radius: 14px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    margin-bottom: 40px;
+  }
+  .news h2 { color: #38bdf8; margin-bottom: 15px; font-size: 1.5rem; }
+  .news-item { margin-bottom: 12px; color: #e6edf3; }
+  .news-item span { color: #8b949e; font-size: 0.9rem; }
 
-    .news {
-      background: #111827;
-      padding: 30px 40px;
-      border-radius: 14px;
-      width: 90%;
-      max-width: 500px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-      margin-bottom: 40px;
-    }
-    .news h2 { color: #38bdf8; margin-bottom: 15px; font-size: 1.5rem; }
-    .news-item { margin-bottom: 10px; color: #e6edf3; }
-    .news-item span { color: #8b949e; font-size: 0.9rem; }
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #6b7280;
+  }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #6b7280;
-    }
-
-  </style>
+</style>
 </head>
 <body>
 
-  <header>
-    <h1>Overbyte Dynamics</h1>
-    <div class="subtitle">Independent Software & Interactive Development</div>
-  </header>
+<header>
+  <h1>Overbyte Dynamics</h1>
+  <div class="subtitle">Independent Software & Interactive Development</div>
+</header>
 
-  <main>
-    <div class="card">
-      <p>Legal Information</p>
-      <div class="links">
-        <a href="terms.html">Terms of Service</a>
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="impressum.html">Impressum</a>
-      </div>
+<main>
+  <div class="card">
+    <p>Legal Information & Links</p>
+    <div class="links">
+      <a href="terms-en.html">Terms (EN)</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="https://discord.gg/3SSDMYdqxn" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/discord.svg" alt="Discord Icon">
+        Discord Server
+      </a>
     </div>
+  </div>
 
-    <div class="news">
-      <h2>News & Updates</h2>
-      <div class="news-item"><span>16 Feb 2026:</span> Website relaunched with new Dark Theme & News Board.</div>
-      <div class="news-item">
-  <span>16 Feb 2026:</span> <strong>Discord Update 2.1</strong> by @HoDev | @PLPYT<br>
-  <em>Role Changes:</em>
-  <ul>
-    <li>Added @&lt;/&gt; [Head of Dev]</li>
-    <li>Added @📁 [Project Manager]</li>
-    <li>Added @&lt;/&gt; [Game Dev]</li>
-    <li>Added @⚔️ [Discord Mod]</li>
-    <li>Added @⚔️ [Game Moderation]</li>
-    <li>Added @🤖 [Bot]</li>
-    <li>Added @-------------&lt; Moderation &gt;------------- </li>
-  </ul>
-  <em>Channel Changes:</em>
-  <ul>
-    <li>Added 📰・news channel</li>
-    <li>Added 📄・discord-change-log channel</li>
-  </ul>
-  <em>Bug fixes:</em>
-  <ul>
-    <li>Removed bug that Players could enter Sapphire commands they weren't allowed to</li>
-  </ul>
-  <em>Target Group:</em> @🎮 [Player]
-</div>
+  <div class="news">
+    <h2>News & Updates</h2>
+    <div class="news-item"><span>16 Feb 2026:</span> Website relaunched with Dark Theme & News Board.</div>
+    <div class="news-item"><span>15 Feb 2026:</span> Overbyte Dynamics created Terms & Privacy pages.</div>
+    <div class="news-item"><span>16 Feb 2026:</span> Discord Update 2.1: Roles added (@Head of Dev, @Project Manager, @Game Dev, @Discord Mod, @Game Moderation, @Bot, Moderation); Channels added (📰 newsletter, 📄 discord-change-log); Bug fixes applied.</div>
+  </div>
+</main>
 
-      <div class="news-item"><span>14 Feb 2026:</span> Initial GitHub Pages deployment successful.</div>
-    </div>
-  </main>
-
-  <footer>
-    © 2026 Overbyte Dynamics. All rights reserved.
-  </footer>
+<footer>
+  © 2026 Overbyte Dynamics. All rights reserved.
+</footer>
 
 </body>
 </html>
