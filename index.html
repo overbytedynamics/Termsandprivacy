@@ -6,103 +6,103 @@
 <title>Overbyte Dynamics</title>
 
 <style>
-  body {
-    margin:0;
-    font-family: Arial, sans-serif;
-    background:#0b0f19;
-    color:#e6edf3;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-  }
+body {
+  margin:0;
+  background:#0b0f19;
+  color:#e6edf3;
+  font-family: Arial, sans-serif;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+}
 
-  .container {
-    text-align:center;
-    width:90%;
-    max-width:700px;
-  }
+/* Canva-style big centered card */
+.card {
+  width:90%;
+  max-width:800px;
+  background:#111827;
+  padding:60px 40px;
+  border-radius:18px;
+  text-align:center;
+  box-shadow:0 20px 60px rgba(0,0,0,0.4);
+}
 
-  h1 {
-    font-size:2.8rem;
-    color:#38bdf8;
-    margin-bottom:10px;
-  }
+/* Title like Canva headline */
+h1 {
+  font-size:3.2rem;
+  color:#38bdf8;
+  margin-bottom:10px;
+}
 
-  p {
-    color:#8b949e;
-    margin-bottom:25px;
-  }
+.subtitle {
+  color:#8b949e;
+  font-size:1.1rem;
+  margin-bottom:35px;
+}
 
-  /* BUTTONS */
-  .buttons {
-    margin-bottom:30px;
-  }
+/* Buttons like Canva blocks */
+.buttons {
+  margin-bottom:35px;
+}
 
-  .buttons a {
-    display:inline-block;
-    margin:6px;
-    padding:10px 18px;
-    background:#1f2937;
-    color:#38bdf8;
-    border-radius:10px;
-    text-decoration:none;
-    transition:0.2s;
-    font-weight:500;
-  }
+.buttons a {
+  display:inline-block;
+  margin:8px;
+  padding:12px 22px;
+  background:#1f2937;
+  color:#38bdf8;
+  border-radius:12px;
+  text-decoration:none;
+  transition:0.2s;
+}
 
-  .buttons a:hover {
-    background:#2563eb;
-    color:white;
-    transform:translateY(-2px);
-  }
+.buttons a:hover {
+  background:#2563eb;
+  color:white;
+  transform:scale(1.05);
+}
 
-  /* NEWS */
-  .news {
-    background:#111827;
-    padding:20px;
-    border-radius:12px;
-    margin-bottom:25px;
-    text-align:left;
-  }
+/* News block */
+.news {
+  background:#0f172a;
+  padding:20px;
+  border-radius:14px;
+  text-align:left;
+  margin-bottom:30px;
+}
 
-  .news h2 {
-    text-align:center;
-    color:#38bdf8;
-    margin-bottom:10px;
-  }
+.news h2 {
+  text-align:center;
+  color:#38bdf8;
+  margin-bottom:10px;
+}
 
-  .news p {
-    margin:5px 0;
-    color:#e6edf3;
-  }
+/* Discord */
+iframe {
+  width:100%;
+  max-width:350px;
+  height:420px;
+  border:none;
+  border-radius:12px;
+  margin-top:15px;
+}
 
-  /* DISCORD */
-  iframe {
-    width:100%;
-    max-width:350px;
-    height:420px;
-    border:none;
-    border-radius:12px;
-    margin-top:10px;
-  }
-
-  footer {
-    margin-top:20px;
-    font-size:0.8rem;
-    color:#6b7280;
-  }
+footer {
+  margin-top:20px;
+  font-size:0.8rem;
+  color:#6b7280;
+}
 
 </style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="card">
 
-  <!-- HEADER -->
   <h1>Overbyte Dynamics</h1>
-  <p>Independent Software & Interactive Development Studio</p>
+  <div class="subtitle">Independent Software & Interactive Development Studio</div>
 
   <!-- BUTTONS -->
   <div class="buttons">
@@ -114,21 +114,19 @@
   <!-- NEWS -->
   <div class="news">
     <h2>News & Updates</h2>
-    <p>• Website redesign launched (Canva-style UI)</p>
-    <p>• Discord Widget integration added</p>
-    <p>• Studio branding Overbyte Dynamics created</p>
+    <p>• Studio identity redesigned</p>
+    <p>• Discord integration added</p>
+    <p>• GitHub Pages deployment active</p>
   </div>
 
-  <!-- DISCORD WIDGET -->
+  <!-- DISCORD -->
   <iframe 
     src="https://discord.com/widget?id=1376217381189193809&theme=dark"
-    allowtransparency="true"
-    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts">
+    sandbox="allow-popups allow-same-origin allow-scripts">
   </iframe>
 
-  <!-- FOOTER -->
   <footer>
-    © 2026 Overbyte Dynamics. All rights reserved.
+    © 2026 Overbyte Dynamics
   </footer>
 
 </div>
